@@ -29,6 +29,11 @@
   /* Size */
 
   --size-border-radius:4px;
+
+/*Section common*/
+
+-o-animation-duration: 300ms;
+
 }
 
 
@@ -84,6 +89,15 @@ ul{
     list-style: none;
     padding-left: 0;
 }
+li{
+    list-style: none;
+}
+button{
+   background-color: transparent; 
+   cursor: pointer;
+   border: none;
+   outline: none;
+}
 
 
 /* Navbar */
@@ -113,10 +127,110 @@ ul{
 .navbar__menu__item.active{
     border: 1px solid white;
     border-radius: var(--size-border-radius);
-
 }
 
 .navbar__menu__item:hover{
     background-color: #616161;
     border-radius: 4px;
+}
+
+/* Home */
+
+#home{
+    background: url(./imgs/bg/bg.PNG) center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+.home__avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid lavenderblush;
+}
+.home__title,
+.home__description{
+   color: white;
+}
+
+
+
+
+.home__contact{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8 12px;
+    border: 2px solid white;
+    border-radius: var(--size-border-radius);
+    color: white;
+}
+/*Section common*/
+.section{
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin:auto;
+}
+/*about Major common*/
+.about__majors{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.major__icon{
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    margin: auto;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+    color: coral;
+}
+#major__icon__css{
+    color: var(--color-blue);
+}
+#major__icon__js{
+    color: rgb(226, 196, 28);
+}
+
+.major__icon:hover i{
+    color: var(--color-pink);
+    transform: rotate(-30deg) scale(1.1);
+}
+
+.major__icon i{
+    transition: all 300ms ease;
+}
+
+.major__title,
+.major__description{
+    color:var(--color-dark-grey);
+}
+.major__description{
+    font-size: var(--font-small);
+}
+.job{
+    display: flex;
+    align-items: center;
+}
+.job__description{
+    margin: 0 16px;
+    text-align: left;
+}
+.job__name,.job__period{
+    color: var(--color-light-grey);
+}
+.job__name{
+    font: var(--font-small);
+
+}
+.job__period{
+    font-size: var(--font-micro);
+}
+.job__logo{
+    padding: auto;
+    width: 120px;
+    height: 120px;
 }
