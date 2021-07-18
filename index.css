@@ -419,6 +419,27 @@ padding: 20px;
     color: var(--color-yellow);
 }
 
+/*Scroll*/
+.arrow-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: var(--color-blue);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    pointer-events: none;
+
+}
+
+.arrow-up.visible{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 @media screen and (max-width:768px){
     .navbar__toggle-btn{
         display: block;
