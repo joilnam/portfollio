@@ -110,6 +110,7 @@ button{
     color: #eeeeee;
     padding: 16px;
     width: 100%;
+    z-index: 1;
     transition: all var(--animation-duration) ease-in-out;
 }
 .navbar__menu{

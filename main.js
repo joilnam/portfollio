@@ -11,3 +11,15 @@ document.addEventListener('scroll',()=>{
     }
 });
 
+//navbar 클릭시 원하는 id 추출
+
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click',(event)=>{
+    const target =event.target;
+    const link =target.dataset.link;
+    if(link==null){
+        return;
+    }
+    const scrollTo=document.querySelector(link);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+})
