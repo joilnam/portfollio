@@ -102,12 +102,15 @@ button{
 
 /* Navbar */
 #navbar{
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color:#73aace;
+    background-color:transparent;
     align-items: center;
     color: #eeeeee;
     padding: 16px;
+    width: 100%;
+    transition: all var(--animation-duration) ease-in-out;
 }
 .navbar__menu{
     display: flex;
@@ -143,12 +146,17 @@ button{
     display: none;
 }
 
+#navbar.navbar--dark{
+    background-color: #20495C;
+    padding: 8px;
+}
 
 /* Home */
 
 #home{
     background: url(./imgs/bg/bg.PNG) center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 .home__avatar{
