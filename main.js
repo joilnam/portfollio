@@ -64,13 +64,17 @@ workBtnContainer.addEventListener('click',(e)=>{
         return;
     }
 
-    projects.forEach((project)=>{
-        if(filter==='*'||filter===project.dataset.type){
-            project.classList.remove('invisible');
-        }else{
-            project.classList.add('invisible');
-        }
-    });
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=>{
+        projects.forEach((project)=>{
+            if(filter==='*'||filter===project.dataset.type){
+                project.classList.remove('invisible');
+            }else{
+                project.classList.add('invisible');
+            }
+        });
+    projectContainer.classList.remove('anim-out');
+    },300);
 });
 
 

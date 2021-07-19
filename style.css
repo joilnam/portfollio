@@ -340,10 +340,18 @@ padding: 20px;
     opacity: 1;
     top: 0;
 }
+
+.work__projects.anim-out{
+    opacity: 0.6;
+    transform: scale(0.96) , translateY(40px);
+}
+
 .work__projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;   
+    opacity: 1;
+    transition: all var(--animation-duration) ease-out;
 }
 .project{
     position:relative;
