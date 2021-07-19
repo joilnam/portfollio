@@ -236,9 +236,10 @@ button{
 .major__title,
 .major__description{
     color:var(--color-dark-grey);
+    font-weight: 700;
 }
 .major__description{
-    font-size: var(--font-small);
+    font-size: var(--font-micro);
 }
 .job{
     display: flex;
